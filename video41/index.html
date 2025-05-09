@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Challenge- Nav bar using flex-box CSS</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+    nav ul {
+      
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      height: 50px;
+      align-items: center;
+    }
+
+    li {
+  margin: 10px;
+  font-size: small;
+  cursor: pointer;
+    }
+
+    .image img {
+      padding-top: 18px;
+      height: 50px;
+    }
+
+    .search img {
+      padding-top: 15px;
+      height: 50px;
+    }
+
+    .logo {
+      position: relative;
+      right: 300px;
+      top: 6px;
+      font-size: 20px;
+      font-weight:bold;
+    }
+
+    .llog img {
+      height: 70px;
+      padding-top: 17px;
+      position: relative;
+      right: 275px;
+    }
+
+    .head {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      font-weight: 900;
+      top: 100px;
+      font-size: 33px;
+      height: 40px;
+    }
+
+    .body {
+      display: flex;
+      justify-content: center;
+      color: rgb(47, 47, 47);
+      position: relative;
+      top: 150px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .button {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 200px;
+      border: 2px solid transparent;
+      background-color: rgb(3, 196, 179);
+      color: aliceblue;
+      width: 310px;
+      height: 60px;
+      text-align: center;
+      font-weight: bolder;
+      padding: 14px;
+      position: relative;
+      left: 465px;
+      border-radius: 9px;
+    }
+
+    .button:hover {
+      background-color: rgb(2, 198, 133);
+      color: azure;
+    }
+    .box{
+      position: relative;
+      top: 250px;
+      border: 2px solid bisque;
+      height: 90vh;
+      background-color: bisque;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="llog"><img src="logo.png" alt=""></li>
+      <li class="logo">UltraEdit</li>
+      <li>Products</li>
+      <li>For Busines</li>
+      <li>Resources</li>
+      <li>Academic licensing</li>
+      <li>Our Company</li>
+      <li class="image"><img src="lang.png" alt=""></li>
+      <li class="search"><img src="search.png" alt=""></li>
+    </ul>
+  </nav>
+
+  <div class="head">Download UltraEdit for Windows</div>
+  <div class="body">Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+    text editor.</div>
+  <div class="button">Download Mac or Linux version</div>
+  <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Transform</title>
+    <style>
+        .container{
+            border: 2px solid purple;
+            height: 80vh;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            height: 20vh;
+            width:15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(40deg); */
+            /* transform: rotateY(80deg); */
+            /* transform: scale(2); */
+            /* transform: skew(20deg); */
+            /* skew in x-axis is not there  */
+            /* #Multipy transforms at the same time!! */
+        transform: translateY(100%)  skew(10deg)  translateX(55%) rotate(0.2turn);
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+    
+</body>
+</html>
