@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selectors</title>
+    <style>
+      /* element selector */
+      span{
+        color: blanchedalmond;
+        background-color: black;
+        
+      }
+      /* class selector */
+        .one {
+            background-color: rgb(0, 130, 244);
+        }
+
+        /* id selector */
+        #div2 {
+            background-color: bisque;
+            color: rgb(2, 97, 180);
+        }
+
+        /* child selector */
+        /* div>p {
+            background-color: blueviolet;
+            color: rgb(255, 240, 219);
+        } */
+        /* decendance selector */
+        div h4{
+            color: black;
+            background-color: rgb(201, 228, 252);
+        }
+        /* universal selector */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* pseudo selector */
+        a:active{
+            background-color: rgb(230, 29, 29);
+        }
+        a:hover{
+            color: rgb(237, 5, 160);
+        }
+      a:link{
+        color: rgb(255, 154, 118);
+      }
+      p:first-child{
+  background-color:cadetblue
+      }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>hi i am a first child of main!</p>
+    </main>
+    <div class="one">Hi there i am a div
+       <article>
+        
+        <h4>hi there </h4>
+       </article>
+  </div>
+
+    <div id="div2">Hi there i am div 2 .hello!</div>
+    <span>
+        Hi, there i am span !!
+    </span>
+    <div>
+        hi here are links..
+  <a href="https://www.google.com">Google</a>&nbsp;&nbsp;
+  <a href="http://youtube.com">Youtube</a>&nbsp;&nbsp;
+  <a href="https://www.github.com">Github</a>
+    </div>
+
+</body>
+
+</html>
