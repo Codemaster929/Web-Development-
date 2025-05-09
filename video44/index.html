@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Download UltraEdit text editor for Windows</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        @media screen and (max-width:600px) {
+            body {
+
+                .box {
+                    grid-template-columns: 1fr;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            height: 50px;
+            align-items: center;
+        }
+
+        li {
+            margin: 10px;
+            font-size: small;
+            cursor: pointer;
+        }
+
+        .image img {
+            padding-top: 18px;
+            height: 50px;
+        }
+
+        .search img {
+            padding-top: 15px;
+            height: 50px;
+        }
+
+        .logo {
+            position: relative;
+            right: 300px;
+            top: 6px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .llog img {
+            height: 70px;
+            padding-top: 17px;
+            position: relative;
+            right: 275px;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-weight: 400;
+            top: 100px;
+            font-size: 40px;
+            height: 40px;
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            color: rgb(47, 47, 47);
+            position: relative;
+            top: 150px;
+            font-weight: 500;
+            font-size: 20px;
+            
+        }
+
+        .button {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 200px;
+            border: 2px solid transparent;
+            background-color: rgb(58, 183, 197);
+            color: aliceblue;
+            width: 310px;
+            height: 55px;
+            text-align: center;
+            font-weight: bolder;
+            padding: 14px;
+            position: relative;
+            left: 465px;
+            border-radius: 9px;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color:  rgba(39, 141, 152, 0.963);
+            color: azure;
+        }
+
+        .box {
+            display: grid;
+            grid-template-areas: "column1 column2 column3"
+                "row1 row2 row3 ";
+            grid-template-columns: 20vw 20vw 20vw;
+            grid-template-rows: 20vw 20vw;
+            position: relative;
+            top: 250px;
+            border: 2px solid transparent;
+            height: 90vh;
+            width: 61.5vw;
+            margin-left: 19vw;
+
+            background-color: rgba(255, 255, 255, 0.888);
+            gap: 25px;
+        }
+
+        .box1 {
+            grid-area: column1;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            background-color:rgba(214, 214, 214, 0.906);
+            border-radius: 15px;
+
+        }
+
+        .box2 {
+            background-color: rgba(214, 214, 214, 0.906);
+            border-radius: 15px;
+        }
+
+        .box3 {
+            background-color: rgba(214, 214, 214, 0.906);
+            border-radius: 15px;
+        }
+
+        .box4 {
+            background-color: rgba(214, 214, 214, 0.906);
+            border-radius: 15px;
+        }
+
+        .box5 {
+            background-color: rgba(214, 214, 214, 0.906);
+            border-radius: 15px;
+        }
+
+        .box6 {
+            background-color: rgba(214, 214, 214, 0.906);
+            border-radius: 15px;
+        }
+
+        .box1 p {
+
+            padding-top: 40px;
+            font-size: 26px;
+            font-weight: 500;
+            position: relative;
+            left: 92px;
+        }
+
+        .box1 button {
+
+            grid-area: column1;
+            height: 40px;
+            width: 180px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            position: relative;
+            top: 132px;
+            left: -42px;
+            background-color: rgb(4, 210, 141);
+        }
+
+        .box2 .main {
+            grid-area: column2;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            font-size: 26px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .box2 button {
+            grid-area: column2;
+            height: 40px;
+            width: 180px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            position: relative;
+            top: 28px;
+            left: 35px;
+            background-color: rgb(4, 210, 141);
+        }
+
+        .sub {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box3 .main3 {
+            grid-area: column3;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            font-size: 26px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .box3 button {
+            grid-area: column3;
+            height: 40px;
+            width: 180px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            position: relative;
+            top: 27px;
+            left: 29px;
+            background-color: rgb(4, 210, 141);
+        }
+
+        .sub3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box4 .main4 {
+            grid-area: row1;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            font-size: 26px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .sub4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box4 button {
+            grid-area: row1;
+            height: 40px;
+            width: 180px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            position: relative;
+            top: 45px;
+            left: 36px;
+            background-color: rgb(4, 210, 141);
+        }
+
+        .box5 .main5 {
+            grid-area: row2;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            font-size: 26px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .box5 button {
+            grid-area: row2;
+            height: 40px;
+            width: 180px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            position: relative;
+            top: 44px;
+            left: 36px;
+            background-color: rgb(4, 210, 141);
+        }
+
+        .sub5 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box6 .main6 {
+            grid-area: row3;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            font-size: 28px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .sub6 {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .box6 button {
+            grid-area: row2;
+            height: 40px;
+            width: 180px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            position: relative;
+            top: 41px;
+            left: 36px;
+            background-color: rgb(4, 210, 141);
+        }
+
+        .box button:hover {
+            background-color: rgb(2, 147, 99);
+        }
+
+        .box button a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+
+        }
+        .bolder{
+            font-weight: 800;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        span img{
+            margin-left: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="llog"><img src="logo.png" alt=""></li>
+            <li class="logo">UltraEdit</li>
+            <li>Products</li>
+            <li>For Busines</li>
+            <li>Resources</li>
+            <li>Academic licensing</li>
+            <li>Our Company</li>
+            <li class="image"><img src="lang.png" alt=""></li>
+            <li class="search"><img src="search.png" alt=""></li>
+        </ul>
+    </nav>
+
+    <div class="head">Download <span class="bolder">UltraEdit</span> for Windows <span><img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="img here "></span></div>
+    <div class="body">Download and try UltraEdit before you buy it! This download includes the full Windows version of
+        the
+        text editor.</div>
+    <div class="button"><a target="_blank"
+            href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download Mac or Linux version</a>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <p> English</p>
+
+            <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+        <div class="box2">
+            <p class="main">Deutsch</p>
+            <p class="sub">German</p>
+            <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+        <div class="box3">
+            <p class="main3">Italiano</p>
+            <p class="sub3">Italian</p>
+            <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+        <div class="box4">
+            <p class="main4">Español</p>
+            <p class="sub4">Spanish</p>
+            <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+
+        <div class="box5">
+            <p class="main5">français</p>
+            <p class="sub5">French</p>
+            <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+
+        <div class="box6">
+            <p class="main6">日本</p>
+            <p class="sub6">Japanese</p>
+            <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
