@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Color nav bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+     
+        :root{
+            --color:orange;
+--seccolor:blue;
+        }
+        nav {
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+        }
+       
+       nav ul{
+            display: flex;
+            justify-content: flex-end;
+            background-color: var(--seccolor);
+            
+          
+            
+        }
+        li{
+            /* background-color: var(--color); */
+            color:aliceblue;
+            list-style: none;
+            margin: 9px;
+            border: 1px solid transparent;
+           /* position: relative;
+           left: 910px; */
+         
+          
+        }
+       
+        .box{
+            border: 2px solid black;
+            margin:5px;
+            height: 50vh;
+            width: 30vh;
+            display: flex;
+flex-direction: column;
+overflow: hidden;
+        }
+        nav li a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</li></a>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Downloads</li>
+        </ul>
+    </nav>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, incidunt fugiat? Voluptatum in hic quod eaque, facilis odio! Dolor odit iure voluptatem a tempora est temporibus aliquam asperiores molestiae maiores vero ea facere, distinctio non vel assumenda cupiditate aliquid deserunt minus eveniet facilis ipsa earum nostrum nesciunt. Dolor, reiciendis? Amet nobis cumque suscipit quibusdam in doloribus repellendus dolor.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius consectetur totam molestiae cupiditate eveniet vitae sunt assumenda, molestias quisquam magni. Vel voluptatibus quaerat neque nobis dolor rem ratione dolore nesciunt sequi qui corrupti sapiente tempore natus placeat molestiae praesentium eveniet maiores quibusdam dolores fuga explicabo suscipit, accusantium quis aliquid! Perspiciatis provident, recusandae ratione accusamus dolore labore et porro quis illum. Dignissimos, cum amet. Natus, inventore cumque.
+   </div>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum inventore eligendi asperiores officia animi explicabo a, voluptates ratione voluptatibus amet sapiente. Porro temporibus repellendus atque ipsa laudantium deserunt doloremque voluptate deleniti beatae molestias veniam dolorum nesciunt, dicta rem eius non iure aliquam dolore. Doloremque vel minima, neque dolor atque impedit. Quidem voluptas non repudiandae magnam magni cupiditate obcaecati.</div>
+</body>
+</html>

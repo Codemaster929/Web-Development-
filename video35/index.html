@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        /* .box:first-child{
+  color: bisque;
+        } */
+         /* .boxes *{
+         
+            border: 2px solid black;
+         } */
+          /* .box::first-line{
+        background-color: bisque;
+          } */
+/* p,a,.box,[data-color=but]{
+    color: blue;
+    margin-top: 25px;
+    padding-left: 24px;
+} */
+  /* .box:nth-child(odd){
+    background-color: bisque;
+  } */
+    /* .box:nth-last-child(2){
+        color: aquamarine;
+    } */
+     .boxes::before{
+        content: "sahaj is the best coder";
+        color: rgb(243, 150, 37);
+     }
+     .boxes::after{
+        content: "itne me itna hi milega";
+        color: blueviolet;
+     }
+     ::selection{
+        background-color: black;
+        color: blanchedalmond;
+     }
+     .box::first-letter{
+        font-size: 29px;
+        color: rgba(255, 31, 31, 0.705);
+     }
+  input::placeholder{
+    color: rgb(88, 88, 88);
+    
+  }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div  data-color="but" class="box">hi there i am a box Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deserunt dignissimos ut ea qui voluptatibus repellat iste recusandae alias, assumenda porro saepe repudiandae natus! Explicabo, et eveniet incidunt deserunt porro itaque, aut quos labore molestiae perferendis placeat odio numquam cum optio ut fugit libero sapiente at ea minus. Maxime, nobis cum! Repudiandae possimus magnam corporis vero placeat ratione numquam!</div>
+        <div class="box">hi there i am a box</div>
+        <div class="box">hi there i am a box</div>
+        <div class="box">hi there i am a box</div>
+        <input type="text" placeholder="type your text here">
+      
+    </div>
+</body>
+</html>
