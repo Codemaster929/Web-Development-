@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Specifity</title>
+    <style>
+        h2 {
+            color: aqua;
+        }
+
+        .hi {
+            color: crimson !important;
+        }
+
+        .bye {
+            color: rgb(127, 169, 3);
+        }
+
+        .hey {
+            color: aquamarine;
+        }
+
+        h3 {
+            color: bisque;
+            background-color: black;
+        }
+        h4 ul{
+            color: rgb(83, 1, 170);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: bisque;" class="hey bye hi ">hi there i am heading 2 </h2>
+    <h3>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</h3>
+    <h4> Specificity Calculation
+        To calculate specificity, assign a value to each part of the selector:
+        <ul>
+            <li> Universal Selector: 0</li>
+            <li> Element selectors and pseudo-elements: 1</li>
+            <li> Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li> ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+            <input type="button" name="submit" value="submit" style="background-color: blue; color: aliceblue   ;">
+            &nbsp;&nbsp;&nbsp;Then, add up the values of all the parts in the selector.
+        </ul>
+    </h4>
+</body>
+
+</html>
