@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property in CSS</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            height: 40vh;
+            width: 50vw;
+           
+        }
+        .box{
+            background-color: blue;
+            height: 10vh;
+            width: 10vw;
+            /* transition-property:background-color,transform;
+            transition-duration: 4s;
+            transition-delay: 1s;
+            transition-timing-function:cubic-bezier(0, 1.11, 0.93, 0.34); */
+            /* can do above 4 lines in one  */
+            transition: all 3s cubic-bezier(0, 1.09, 0, 0.7) 1s ;
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+
+
+</body>
+</html>

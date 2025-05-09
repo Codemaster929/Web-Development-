@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fill & object cover</title>
+    <style>
+        .container{
+            height: 1000px;
+            width: 1200px;
+            border: 2px solid black;
+        
+             background-image: url("https://i.pinimg.com/736x/22/eb/44/22eb44eaa6c1ef724e5dd3cc29c0c7d8.jpg");
+             /* background-repeat: repeat-x; */
+             background-repeat: no-repeat;
+             object-position:center center;  
+           color: aliceblue;
+           /* display: flex;
+           justify-content: center;
+           align-items: center; */
+           font-size: 90px  ;
+    
+           
+
+        }
+        img{
+            height: 300px;
+            width: 400px;
+                object-fit: cover;}
+        /* object-position: top left ; */
+        /* object-position: 10px 30px ;
+            
+        } */
+    </style>
+</head>
+<body>
+    
+    <div class="container">hello there 
+        </div>
+</body>
+</html>
