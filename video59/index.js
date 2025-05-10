@@ -31,4 +31,23 @@ else {
         return a / b;
     }
 }
-console.log("The result is :",sum(3,5));
+    
+let a =prompt("Enter first no :");
+let b=prompt("Enter second no:");
+ let symbol=prompt("Enter the operation:");
+ if(symbol=="+"){
+    alert("The answer is:"+sum(a,b));
+
+ } 
+ else if(symbol=="-"){
+    alert("The answer is:"+subtract(a,b));
+ }
+ else if(symbol=="*"){
+    alert("The answer is:"+multiply(a,b));
+ }
+else if(symbol=="/"){
+    alert("The answer is:"+divide(a,b));
+}
+else{
+    alert("wrong input!!")
+}
