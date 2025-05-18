@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting-Deletion</title>
+    <style>
+        .red{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red green">
+        <div class="box" data-createdby="sahaj">hey i am a box </div>
+        <div class="box">hey i am a box2 </div>
+    </div>
+    <script>
+        //    let div =document.createElement("div")
+        //     div.innerHTML="hi i am inserted & created <b>by sahaj</b>";
+        //     document.querySelector(".container").after(div);
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend", " <b>i  am under the water.., help,</b>")
+    </script>
+</body>
+
+</html>
