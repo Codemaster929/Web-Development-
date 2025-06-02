@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note taking app</title>
+</head>
+<body>
+    <button>Add Notes</button>
+    <div class="space"></div>
+    <script>
+ function notetaking(note) {
+ localStorage.setItem("notes",note)
+
+ }
+  let note=localStorage.getItem("note")
+ if(note){
+    document.querySelector(".space").innerHTML=note
+ }
+ document.querySelector("button").addEventListener("click",()=>{
+    let note=prompt("Enter your note:")
+    notetaking(note)
+    document.querySelector(".space").innerHTML=note
+ })
+    </script>
+</body>
+</html>
