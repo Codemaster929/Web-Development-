@@ -1,0 +1,20 @@
+body{
+  background-color: #111;
+  color: #fff;
+}
+
+#navbar{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  background-color: rgb(42, 105, 84);
+}
+
+.parent{
+  padding: 20px;
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 20px;
+}
